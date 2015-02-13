@@ -1042,6 +1042,18 @@ body {
   box-shadow: 3px 3px 4px #000;
   overflow-y: auto; }
 
+#hum-edit-published #document-viewport .reading-page {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-top: 60px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 80px;
+  width: 50%;
+  background: white;
+  box-shadow: 3px 3px 4px #000;
+  overflow-y: auto; }
+
 #hum-edit-published #document-viewport .page-image .dragon {
   margin-top: 20px;
   margin-bottom: 20px;
@@ -1049,6 +1061,29 @@ body {
   height: 582px;
   background: white;
   box-shadow: 3px 3px 4px #000; }
+
+#hum-edit-published #document-viewport .thumb-image-div {
+  padding-top: 12px;
+  clear: both; }
+
+#hum-edit-published #document-viewport .thumb-placeholder {
+  color: lightgray;
+  font-size: 5em; }
+
+#hum-edit-published #document-viewport .reading-highlight {
+  background-color: #D9EDF7;
+  -webkit-transition: all 0.4s ease-out 0s;
+  -moz-transition: all 0.4s ease-out 0s;
+  -ms-transition: all 0.4s ease-out 0s;
+  -o-transition: all 0.4s ease-out 0s;
+  transition: all 0.4s ease-out 0s; }
+
+#hum-edit-published #document-viewport .reading-pagebreak {
+  width: 45%;
+  border-bottom: 1px solid #777;
+  margin: auto;
+  margin-bottom: 5px;
+  clear: both; }
 
 #hum-edit-published #document-viewport .superlinear {
   margin-bottom: -10px; }
