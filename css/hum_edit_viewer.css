@@ -1085,6 +1085,18 @@ body {
   margin-bottom: 5px;
   clear: both; }
 
+#hum-edit-published #document-viewport .table-of-contents .title {
+  font-size: 2em;
+  text-transform: uppercase;
+  margin-bottom: 15px; }
+
+#hum-edit-published #document-viewport .table-of-contents .anchor {
+  color: black;
+  text-decoration: none; }
+
+#hum-edit-published #document-viewport .table-of-contents .item {
+  text-transform: uppercase; }
+
 #hum-edit-published #document-viewport .superlinear {
   margin-bottom: -10px; }
 
