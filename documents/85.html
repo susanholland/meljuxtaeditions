@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
    <head>
-      <title>Doc with no divs</title>
+      <title>AARDVARK</title>
       <meta charset="utf-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
       <meta name="viewport" content="width=device-width">
@@ -26,11 +26,11 @@
    </head>
    <body>
       <div class="page-header">
-  <h1><a id="home-link" href="/Test1">General Testing</a></h1>
+  <h1><a id="home-link" href="/Test2">Another Test</a></h1>
 </div>		 
 
 
-      <h1 class="doc-title">Doc with no divs</h1>
+      <h1 class="doc-title">AARDVARK</h1>
       	  <style type="text/css">
 			.humedit-unclear { color: gray; }
 			.humedit-sic { border-bottom: 1px dashed #999; }
@@ -87,7 +87,7 @@
    <table class="header block">
          <tr>
             <td class = "header name">Title:</td>
-            <td>Doc with no divs</td>
+            <td>AARDVARK</td>
          </tr>
    
       <tr class="sep"><td colspan="2"/></tr>
@@ -113,52 +113,17 @@
    </div>
 </div>
 
-            
-            <div id="reading-text" class="reading-text">
-      <div class="reading-page">
-
-
-        <div class="thumb-image-div col-xs-3 col-sm-3 col-md-3 col-lg-3"></div>
-        <div class="reading-div col-xs-8 col-sm-8 col-md-8 col-lg-8" id="page-1"><span data-annotation-id='3479' class='annotation humedit-pb'>✴</span><span data-annotation-id='3480' class='annotation humedit-pb'>This is page 1.This is page 1.This is page 1.This is page 1.This is page 1.This is Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span><span data-annotation-id='3482' class='annotation humedit-pb'>This is page 2. This is page 2. This is page 2. This is page 2. This is page 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span><span data-annotation-id='3483' class='annotation humedit-pb'>This is page 3. This is page 3. This is page 3. This is page 3. This is page 3. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span></div>
-
+                 <div id="page-3507" class="sbs-page">
+      <div class="page-image col-xs-6 col-sm-6 col-md-6 col-lg-6">
+            <div class="dragon" id="page-image-2ac1edc9-2da4-4074-9062-c263d911d6e0"
+                 data-tile-source-url="/Test2/openseadragon/2ac1edc9-2da4-4074-9062-c263d911d6e0.json"></div>
       </div>
+      <div class="page col-xs-6 col-sm-6 col-md-6 col-lg-6" data-page-number="1">
+        <div class="diplomatic"><div class='line'>AARDVARK!Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
 </div>
-
-<script type="text/javascript">
-
-    $(document).ready( function( ) {
-
-        // manually add the images to the page once it is loaded
-
-        var images = JSON.parse( '{&quot;1&quot;:[{&quot;aid&quot;:3483,&quot;guid&quot;:&quot;2c4a9894-6d1d-4945-a6af-60da4d19582d&quot;,&quot;thumbnail_url&quot;:&quot;https://dave-uploads-juxtaeditions.s3.amazonaws.com/zoom_data2c4a9894-6d1d-4945-a6af-60da4d19582dWinter-2.jpg&quot;},{&quot;aid&quot;:3482,&quot;guid&quot;:&quot;c874884b-121f-4090-a5da-8aae794fe974&quot;,&quot;thumbnail_url&quot;:&quot;https://dave-uploads-juxtaeditions.s3.amazonaws.com/zoom_datac874884b-121f-4090-a5da-8aae794fe974Koala-2.jpg&quot;},{&quot;aid&quot;:3480,&quot;guid&quot;:&quot;264c2d2e-3a04-4ad9-895d-0ff3b58d83f8&quot;,&quot;thumbnail_url&quot;:&quot;https://dave-uploads-juxtaeditions.s3.amazonaws.com/zoom_data264c2d2e-3a04-4ad9-895d-0ff3b58d83f8Blue%2Bhills-2.jpg&quot;}]}'.replace( /&quot;/g, "\"" ) );
-
-        $.each( images, function( page, images ) {
-           $.each( images, function( index, value ) {
-               $( thumb_html( value['aid'], value['guid'], value['thumbnail_url']) ).insertBefore( $( ".reading-div span[data-annotation-id='" + value['aid'] + "']") );
-            });
-        });
-
-        // hover over functionality...
-        $( ".thumb-image" ).hover(function( ) {
-            var aid = $( this).attr( "id").replace( "thumb-", "" );
-            $( ".reading-div span[data-annotation-id='" + aid + "']" ).addClass( "reading-highlight");
-        }, function( ) {
-            var aid = $( this).attr( "id").replace( "thumb-", "" );
-            $( ".reading-div span[data-annotation-id='" + aid + "']" ).removeClass( "reading-highlight");
-        });
-
-        // thumbnail click handler
-        $( ".thumb-image" ).click( function( ) {
-            thumbnail_clicked( $( this ) );
-        });
-
-    });
-
-    function thumb_html( id, guid, url ) {
-       return( "<img class='thumb-image' id='thumb-" + id + "' guid='" + guid + "' src='" + url + "'>" );
-    }
-
-</script>
+      </div>
+      <input id="annotationsJSON" name="annotationsJSON" type="hidden" value="[]" />
+    </div>
 
 
       </div>
@@ -170,7 +135,7 @@
 
    $(document).ready(function() {
       var seaDragonAssetsPath = "https://s3.amazonaws.com/assets-juxtaeditions/assets/"
-        var externalContentPath = "/Test1/catalog/"
+        var externalContentPath = "/Test2/catalog/"
       var publishedView = new HumEditViewer.PublishedView({
             el: $("#hum-edit-published"),
             seaDragonAssetsPath: seaDragonAssetsPath,
