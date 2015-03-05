@@ -130,7 +130,7 @@
 
         // manually add the images to the page once it is loaded
 
-        var images = JSON.parse( '{&quot;1&quot;:[]}'.replace( /&quot;/g, "\"" ) );
+        var images = JSON.parse( '{&quot;1&quot;:[{&quot;aid&quot;:3471,&quot;guid&quot;:&quot;1da6a273-3453-466b-85a6-82124315da9c&quot;,&quot;thumbnail_url&quot;:&quot;https://dave-uploads-juxtaeditions.s3.amazonaws.com/zoom_data1da6a273-3453-466b-85a6-82124315da9cD7301EE8-A37D-4EBF-9605-3D942267C0D2-3.png&quot;},{&quot;aid&quot;:3470,&quot;guid&quot;:&quot;e50ac815-6fbd-42d0-a374-2d913a026483&quot;,&quot;thumbnail_url&quot;:&quot;https://dave-uploads-juxtaeditions.s3.amazonaws.com/zoom_datae50ac815-6fbd-42d0-a374-2d913a0264839C5AB625-D52A-432C-99E2-7FF9B81D94C2-3.png&quot;},{&quot;aid&quot;:3468,&quot;guid&quot;:&quot;c11dab95-36c9-40fb-a543-8478b08e4475&quot;,&quot;thumbnail_url&quot;:&quot;https://dave-uploads-juxtaeditions.s3.amazonaws.com/zoom_datac11dab95-36c9-40fb-a543-8478b08e44751C21669C-855E-4E5E-89B7-FD530F930FDB-3.png&quot;}]}'.replace( /&quot;/g, "\"" ) );
 
         $.each( images, function( page, images ) {
            $.each( images, function( index, value ) {
