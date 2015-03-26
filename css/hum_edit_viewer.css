@@ -1042,6 +1042,9 @@ body {
   box-shadow: 3px 3px 4px #000;
   overflow-y: auto; }
 
+#hum-edit-published #document-viewport .reading-text {
+  margin-top: 40px; }
+
 #hum-edit-published #document-viewport .reading-page {
   margin-top: 20px;
   margin-bottom: 20px;
@@ -1052,7 +1055,8 @@ body {
   width: 50%;
   background: white;
   box-shadow: 3px 3px 4px #000;
-  overflow-y: auto; }
+  clear: both;
+  display: inline-block; }
 
 #hum-edit-published #document-viewport .reading-page .heading {
   padding-left: 15px; }
@@ -1071,7 +1075,7 @@ body {
 
 #hum-edit-published #document-viewport .thumb-image {
   position: absolute;
-  left: -165px; }
+  left: -40%; }
 
 #hum-edit-published #document-viewport .thumb-placeholder {
   color: lightgray;
