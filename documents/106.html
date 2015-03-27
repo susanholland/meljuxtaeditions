@@ -115,7 +115,7 @@
 
             
             <div id="reading-text" class="reading-text">
-      <div id="page-4411" class="reading-page">
+      <div id="page-1" class="reading-page">
 
 
         <div class="thumb-image-div col-xs-3 col-sm-3 col-md-3 col-lg-3"></div>
@@ -129,26 +129,32 @@
 
     $(document).ready( function( ) {
 
-        // get the information for all our images...
+        // get the information for all our divs and images...
 
+
+        // convert to real JSON
+        var divs = JSON.parse( '{&quot;1&quot;:[]}'.replace( /&quot;/g, "\"" ) );
+
+        // manually add the divs to the page once it is loaded
+        $.each( divs, function( page, div ) {
+           $( '<h3>' + div[0]['heading'] + '</h3>' ).insertBefore( $( ".reading-div span[data-annotation-id~='" + div[0]['id'] + "']").filter( ":first" ) );
+        });
+
+        // convert to real JSON
         var images = JSON.parse( '{&quot;1&quot;:[{&quot;aid&quot;:4417,&quot;guid&quot;:&quot;a1829833-2bdc-420c-af5b-9b8a315553f6&quot;,&quot;thumbnail_url&quot;:&quot;https://dave-uploads-juxtaeditions.s3.amazonaws.com/zoom_dataa1829833-2bdc-420c-af5b-9b8a315553f69DE6D0C1-FC9E-4C21-8532-1B5A62E43BDF-3.png&quot;},{&quot;aid&quot;:4416,&quot;guid&quot;:&quot;fbdb216a-c655-441c-80f7-d96bb74679ba&quot;,&quot;thumbnail_url&quot;:&quot;https://dave-uploads-juxtaeditions.s3.amazonaws.com/zoom_datafbdb216a-c655-441c-80f7-d96bb74679ba9C5AB625-D52A-432C-99E2-7FF9B81D94C2-3.png&quot;},{&quot;aid&quot;:4414,&quot;guid&quot;:&quot;0609dde7-b849-4b0b-b7fe-78ac739b8435&quot;,&quot;thumbnail_url&quot;:&quot;https://dave-uploads-juxtaeditions.s3.amazonaws.com/zoom_data0609dde7-b849-4b0b-b7fe-78ac739b84351C21669C-855E-4E5E-89B7-FD530F930FDB-3.png&quot;}]}'.replace( /&quot;/g, "\"" ) );
 
         // manually add the images to the page once it is loaded
         $.each( images, function( page, images ) {
            $.each( images, function( index, value ) {
-               $( thumb_html( value['aid'], value['guid'], value['thumbnail_url']) ).insertBefore( $( ".reading-div span[data-annotation-id='" + value['aid'] + "']").filter( ":first" ) );
+               $( thumb_html( value['aid'], value['guid'], value['thumbnail_url']) ).insertBefore( $( ".reading-div span[data-annotation-id~='" + value['aid'] + "']").filter( ":first" ) );
             });
         });
-
-        // add a break after each 'page' of content
-        //$( '<br/><br/>').insertAfter( ".humedit-pb" );
 
         // ensure that the images don't overlap
         var baseline = 0;
         var xoffset = 0;
-        var offset = null;
         $( ".thumb-image" ).each( function( index ) {
-            offset = $(this).offset();
+            var offset = $(this).offset();
             if (index === 0) {
                 baseline = offset.top;
                 xoffset = offset.left;
@@ -164,17 +170,20 @@
         });
 
         // set the minimum page height in case we have moved stuff around...
-        if( offset !== null ) {
-            $( ".reading-page" ).css( "min-height", offset.top );
-        }
+        // do each page seperatly...
+        var last_thumbnail = null;
+           last_thumbnail = $( "#page-1 .thumb-image" ).filter( ":last" );
+           if( last_thumbnail ) {
+               $( "#page-1 .reading-page" ).css( "min-height", last_thumbnail.offset( ).top );
+           }
 
         // hover over functionality...
         $( ".thumb-image" ).hover(function( ) {
             var aid = $( this).attr( "id").replace( "thumb-", "" );
-            $( ".reading-div span[data-annotation-id='" + aid + "']" ).addClass( "reading-highlight");
+            $( ".reading-div span[data-annotation-id~='" + aid + "']" ).addClass( "reading-highlight");
         }, function( ) {
             var aid = $( this).attr( "id").replace( "thumb-", "" );
-            $( ".reading-div span[data-annotation-id='" + aid + "']" ).removeClass( "reading-highlight");
+            $( ".reading-div span[data-annotation-id~='" + aid + "']" ).removeClass( "reading-highlight");
         });
 
         // thumbnail click handler; call if the handler is defined, ignore otherwise.
