@@ -113,94 +113,39 @@
    </div>
 </div>
 
-            
-            <div id="reading-text" class="reading-text">
-      <div id="page-1" class="reading-page">
-
-
-        <div class="thumb-image-div col-xs-3 col-sm-3 col-md-3 col-lg-3"></div>
-        <div class="reading-div col-xs-8 col-sm-8 col-md-8 col-lg-8" id="page-1"><span data-annotation-id='4414' class='annotation humedit-pb'>This is page one. </span><span data-annotation-id='4416' class='annotation humedit-pb'>This is page 2. </span><span data-annotation-id='4417' class='annotation humedit-pb'>This is page three. </span></div>
-        <input id="annotationsJSON" name="annotationsJSON" type="hidden" value="[]" />
-
+                 <div id="page-4414" class="sbs-page">
+      <div class="page-image col-xs-6 col-sm-6 col-md-6 col-lg-6">
+            <div class="dragon" id="page-image-02c02d63-a7e1-497f-a07c-c6795430afa4"
+                 data-tile-source-url="/werwerwewrwr/openseadragon/02c02d63-a7e1-497f-a07c-c6795430afa4.json"></div>
       </div>
+      <div class="page col-xs-6 col-sm-6 col-md-6 col-lg-6" data-page-number="1">
+        <div class="diplomatic"><div class='line'>This is page one. </div>
 </div>
-
-<script type="text/javascript">
-
-    $(document).ready( function( ) {
-
-        // get the information for all our divs and images...
-
-
-        // convert to real JSON
-        var divs = JSON.parse( '{&quot;1&quot;:[]}'.replace( /&quot;/g, "\"" ) );
-
-        // manually add the divs to the page once it is loaded
-        $.each( divs, function( page, div ) {
-           $( '<h3>' + div[0]['heading'] + '</h3>' ).insertBefore( $( ".reading-div span[data-annotation-id~='" + div[0]['id'] + "']").filter( ":first" ) );
-        });
-
-        // convert to real JSON
-        var images = JSON.parse( '{&quot;1&quot;:[{&quot;aid&quot;:4417,&quot;guid&quot;:&quot;a1829833-2bdc-420c-af5b-9b8a315553f6&quot;,&quot;thumbnail_url&quot;:&quot;https://dave-uploads-juxtaeditions.s3.amazonaws.com/zoom_dataa1829833-2bdc-420c-af5b-9b8a315553f69DE6D0C1-FC9E-4C21-8532-1B5A62E43BDF-3.png&quot;},{&quot;aid&quot;:4416,&quot;guid&quot;:&quot;fbdb216a-c655-441c-80f7-d96bb74679ba&quot;,&quot;thumbnail_url&quot;:&quot;https://dave-uploads-juxtaeditions.s3.amazonaws.com/zoom_datafbdb216a-c655-441c-80f7-d96bb74679ba9C5AB625-D52A-432C-99E2-7FF9B81D94C2-3.png&quot;},{&quot;aid&quot;:4414,&quot;guid&quot;:&quot;0609dde7-b849-4b0b-b7fe-78ac739b8435&quot;,&quot;thumbnail_url&quot;:&quot;https://dave-uploads-juxtaeditions.s3.amazonaws.com/zoom_data0609dde7-b849-4b0b-b7fe-78ac739b84351C21669C-855E-4E5E-89B7-FD530F930FDB-3.png&quot;}]}'.replace( /&quot;/g, "\"" ) );
-
-        // manually add the images to the page once it is loaded
-        $.each( images, function( page, images ) {
-           $.each( images, function( index, value ) {
-               $( thumb_html( value['aid'], value['guid'], value['thumbnail_url']) ).insertBefore( $( ".reading-div span[data-annotation-id~='" + value['aid'] + "']").filter( ":first" ) );
-            });
-        });
-
-        // ensure that the images don't overlap
-        var baseline = 0;
-        var xoffset = 0;
-        $( ".thumb-image" ).each( function( index ) {
-            var offset = $(this).offset();
-            if (index === 0) {
-                baseline = offset.top;
-                xoffset = offset.left;
-            }
-
-            var expected_top = ( index * 110 ) + baseline;
-
-            if( offset.top < expected_top ) {
-                offset.top = expected_top;
-            }
-            offset.left = xoffset;
-            $( this ).offset( offset );
-        });
-
-        // set the minimum page height in case we have moved stuff around...
-        // do each page seperatly...
-        var last_thumbnail = null;
-           last_thumbnail = $( "#page-1 .thumb-image" ).filter( ":last" );
-           if( last_thumbnail ) {
-               $( "#page-1 .reading-page" ).css( "min-height", last_thumbnail.offset( ).top );
-           }
-
-        // hover over functionality...
-        $( ".thumb-image" ).hover(function( ) {
-            var aid = $( this).attr( "id").replace( "thumb-", "" );
-            $( ".reading-div span[data-annotation-id~='" + aid + "']" ).addClass( "reading-highlight");
-        }, function( ) {
-            var aid = $( this).attr( "id").replace( "thumb-", "" );
-            $( ".reading-div span[data-annotation-id~='" + aid + "']" ).removeClass( "reading-highlight");
-        });
-
-        // thumbnail click handler; call if the handler is defined, ignore otherwise.
-        $( ".thumb-image" ).click( function( ) {
-            if( typeof thumbnail_clicked === "function" ) {
-                var guid = $(this).attr("guid");
-                thumbnail_clicked(guid);
-            }
-        });
-
-    });
-
-    function thumb_html( id, guid, url ) {
-       return( "<img class='thumb-image' id='thumb-" + id + "' guid='" + guid + "' src='" + url + "'>" );
-    }
-
-</script>
+      </div>
+      <input id="annotationsJSON" name="annotationsJSON" type="hidden" value="[]" />
+    </div>
+    <div id="page-4416" class="sbs-page">
+      <div class="page-image col-xs-6 col-sm-6 col-md-6 col-lg-6">
+            <div class="dragon" id="page-image-8deab2c7-4454-4791-a565-273d9d6ba0a6"
+                 data-tile-source-url="/werwerwewrwr/openseadragon/8deab2c7-4454-4791-a565-273d9d6ba0a6.json"></div>
+      </div>
+      <div class="page col-xs-6 col-sm-6 col-md-6 col-lg-6" data-page-number="2">
+        <div class="diplomatic"><div class='line'>This is page 2. </div>
+</div>
+      </div>
+      <input id="annotationsJSON" name="annotationsJSON" type="hidden" value="[]" />
+    </div>
+    <div id="page-4417" class="sbs-page">
+      <div class="page-image col-xs-6 col-sm-6 col-md-6 col-lg-6">
+            <div class="dragon" id="page-image-ed2c77e5-8512-45b4-957c-316ca8293e47"
+                 data-tile-source-url="/werwerwewrwr/openseadragon/ed2c77e5-8512-45b4-957c-316ca8293e47.json"></div>
+      </div>
+      <div class="page col-xs-6 col-sm-6 col-md-6 col-lg-6" data-page-number="3">
+        <div class="diplomatic"><div class='line'>This is page three. </div>
+</div>
+      </div>
+      <input id="annotationsJSON" name="annotationsJSON" type="hidden" value="[]" />
+    </div>
 
 
       </div>
