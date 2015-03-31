@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Side-by-side comparison</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="cache-control" content="max-age=0" />
+      <meta http-equiv="cache-control" content="no-cache" />
+      <meta http-equiv="expires" content="0" />
+      <meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
+      <meta http-equiv="pragma" content="no-cache" />
+
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
+      
+      <link rel="stylesheet" href="../css/hum_edit_viewer.css">
+      <link rel="stylesheet" href="../css/common.css">
+      <link rel="stylesheet" href="../css/comparison.css">
+
+      <!-- JUXTA WS visualization stylesheet -->
+      <link href="https://s3.amazonaws.com/assets-juxtaeditions/assets/sidebyside.css" rel="stylesheet" type="text/css">
+
+      <!-- JUXTA WS dependencies -->
+      <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+      <script type="text/javascript" src="https://s3.amazonaws.com/assets-juxtaeditions/assets/raphael-min.js"></script>
+      <script type="text/javascript" src="https://s3.amazonaws.com/assets-juxtaeditions/assets/jquery.mousewheel.min.js"></script>
+
+      <!-- JUXTA WS scripts -->
+      <script type="text/javascript" src="https://s3.amazonaws.com/assets-juxtaeditions/assets/juxta-ws-common.js"></script>
+      <script type="text/javascript" src="https://s3.amazonaws.com/assets-juxtaeditions/assets/sidebyside.js"></script>
+      <script src="../js/comparison.js"></script>
+      
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.7.0/underscore-min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/backbone.js/1.0.0/backbone-min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+
+   </head>
+   <body>
+      <div class="page-header">
+  <h1><a id="home-link" href="/comp">Comparisons</a></h1>
+</div>		 
+
+
+      <div id="main-content">
+         <div class="comparison-view">
+                <div id="juxta-ws-content" class="juxta-ws-content">
+
+<span id="connector-prototype" style="display:none"></span>
+<span id="lit-connector-prototype" style="display:none"></span>
+<span id="move-conn-prototype" style="display:none"></span>
+
+<div id="side-by-side">
+    <span id="embedded" style="display: none">true</span>
+    <span id="setId" style="display: none">28</span>
+    <span id="witness-count" style="display: none">2</span>
+       
+    <div id="left-witness" class="sbs-witness">
+        <div class="header">
+            <div class="sbs-title" title="Bliss copy">Bliss copy</div>
+            <a id="change-left" class="juxta-button sbs-button">Change</a>
+            <div style="clear: both;"></div>
+        </div>
+        <span id="left-witness-id" style="display: none">57</span>
+        <div id="left-witness-text" class="witness-text">
+<br/>
+<br/>
+Four score and seven years ago our fathers brought forth <span id="diff-2842" class="diff change" uuid="e7e19675-8193-4bf1-ac3e-26bdfae3ba4b" juxta:range="59,61" juxta:connect-to="2843"">on</span> this continent, a new nation, conceived in Liberty, and dedicated to the proposition that all men are created equal. <br/>
+<br/>
+ Now we are engaged in a great civil war, testing whether that nation, or any nation so conceived and so dedicated, can long endure. We are met on a great <span id="diff-2844" class="diff change" uuid="e1706b9b-b969-4234-b538-eff26250b5b5" juxta:range="336,348" juxta:connect-to="2845"">battle-field</span> of that war. We <span id="diff-2848" class="diff change" uuid="e6027414-3ee9-4bf8-83b0-773275c82e6a" juxta:range="365,369" juxta:connect-to="2849"">have</span> come to dedicate a portion of <span id="diff-2850" class="diff change" uuid="e6a9dda0-f01c-4baa-b0bf-70c8da7e23f3" juxta:range="400,410" juxta:connect-to="2851"">that field</span>, as a final resting place for those who<span id="diff-2854" class="diff change" uuid="1e4d6456-3545-47b6-930f-f240437876a0" juxta:range="450,450" juxta:connect-to="2855""></span> here <span id="diff-2856" class="diff change" uuid="01a7108d-6969-4ef9-b001-c67ea66718fe" juxta:range="456,472" juxta:connect-to="2857"">gave their lives</span> that <span id="diff-2862" class="diff change" uuid="d0e02cbf-3668-4f64-bb8f-f4bfee0dcd83" juxta:range="478,482" juxta:connect-to="2863"">that</span> nation might live. <span id="diff-2864" class="diff change" uuid="5b1ff5af-da12-45b8-9d60-c5f3b4b1132e" juxta:range="502,542" juxta:connect-to="2865"">It is altogether fitting and proper that</span> we <span id="diff-2878" class="diff change" uuid="35a9b76c-4167-4951-9294-5f8895eb5da9" juxta:range="546,552" juxta:connect-to="2879"">should</span> do <span id="diff-2886" class="diff change" uuid="6126293f-7fb6-439a-b5aa-764dc3e83ca6" juxta:range="556,560" juxta:connect-to="2887"">this</span>. <br/>
+<br/>
+ But, in a larger sense, we can not dedicate <span id="diff-2888" class="diff change" uuid="0e68aca7-b579-44a4-8197-5d80d8a613fb" juxta:range="609,611" juxta:connect-to="2889"">--</span> we can not consecrate <span id="diff-2890" class="diff change" uuid="9d1fcb15-b99b-459d-928f-38b76ccb213b" juxta:range="634,636" juxta:connect-to="2891"">--</span> we can not hallow <span id="diff-2892" class="diff change" uuid="38f6a844-6fe6-475f-a940-b4e7a9df6fd1" juxta:range="655,657" juxta:connect-to="2893"">--</span> this ground. The brave men, living and dead, who struggled here, have <span id="diff-2894" class="diff change" uuid="64e7b83d-60e0-43fc-985e-aa8315ed6beb" juxta:range="728,739" juxta:connect-to="2895"">consecrated</span> it, far above our poor power to add or detract. The world will little note, nor long remember what we say here, <span id="diff-2896" class="diff change" uuid="ea5aca82-d6b5-4605-917a-e06cc6b3104d" juxta:range="852,855" juxta:connect-to="2897"">but</span> it can never forget what they did here. It is<span id="diff-2898" class="diff change" uuid="f8ec43df-e55c-4946-8270-5bc805867e17" juxta:range="901,901" juxta:connect-to="2899""></span> for us the living, <span id="diff-2900" class="diff change" uuid="834b0b81-740d-48ac-b813-11241308e224" juxta:range="921,944" juxta:connect-to="2901"">rather, to be dedicated</span> here <span id="diff-2908" class="diff change" uuid="26dec950-fb28-4396-afa1-ec6ab07adef1" juxta:range="950,1055" juxta:connect-to="2909"">to the unfinished work which they who fought here have thus far so nobly advanced. It is rather for us to</span> be <span id="diff-2950" class="diff change" uuid="568c84e0-a568-4f9c-8214-f91df5e665f2" juxta:range="1059,1063" juxta:connect-to="2951"">here</span> dedicated to the great task remaining before us <span id="diff-2952" class="diff change" uuid="8df8ba60-07ce-42d2-a8a4-29504ccb51fd" juxta:range="1112,1114" juxta:connect-to="2953"">--</span> that from these honored dead we take increased devotion to that cause for which they<span id="diff-2954" class="diff change" uuid="d0aade01-723b-4563-983a-14fe87a89ccd" juxta:range="1199,1199" juxta:connect-to="2955""></span> gave the last full measure of devotion <span id="diff-2956" class="diff change" uuid="786dd34a-cc74-4e3c-8abf-2b68ab21cbc2" juxta:range="1239,1241" juxta:connect-to="2957"">--</span> that we here highly resolve <span id="diff-2958" class="diff change" uuid="4556b2be-d139-4082-98af-549f5fa9872b" juxta:range="1270,1274" juxta:connect-to="2959"">that</span> these dead shall not have died in vain <span id="diff-2960" class="diff change" uuid="cf995c9c-0775-47e6-9fc5-d47d6a68a143" juxta:range="1314,1316" juxta:connect-to="2961"">--</span> that <span id="diff-2962" class="diff change" uuid="69e1cbc9-441b-49c0-a299-977a6ae334b8" juxta:range="1322,1326" juxta:connect-to="2963"">this</span> nation, <span id="diff-2964" class="diff change" uuid="aa36691d-f425-4d7b-8f5b-05817521e466" juxta:range="1335,1344" juxta:connect-to="2965"">under God</span>, shall have a new birth of freedom <span id="diff-2968" class="diff change" uuid="dc68a89f-ad2c-4b9c-8c23-24e43f3dafbe" juxta:range="1380,1382" juxta:connect-to="2969"">--</span> and that government of the people, by the people, for the people, shall not perish from the earth.<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+        </div>
+        <div class="more-scroller"><p class="more-scroller"/></div>
+        <div style="clear: both;"></div>
+    </div>
+    
+    <div id="scroll-mode">
+        <img id="scroll-mode-img" src="https://s3.amazonaws.com/assets-juxtaeditions/assets/lock.gif"/>
+    </div>
+    
+    <div id="connections-div" class="canvas-div"></div> 
+    
+    <div id="right-witness" class="sbs-witness">
+        <div class="header">
+            <div class="sbs-title" title="Nicolay Copy">Nicolay Copy</div>
+            <a id="change-right" class="juxta-button sbs-button">Change</a>
+            <a id="toggle-moves" class="juxta-button sbs-button pushed" style="display:none" title="Toggle moves visibility">Moves</a>
+            <div style="clear: both;"></div>
+        </div>
+        <span id="right-witness-id" style="display: none">58</span>
+        <div id="right-witness-text" class="witness-text">
+<br/>
+<br/>
+Four score and seven years ago our fathers brought forth, <span id="diff-2843" class="diff change" uuid="bcb7a1bd-a02c-4b27-98ad-e170dbd4fa8f" juxta:range="60,64" juxta:connect-to="2842"">upon</span> this continent, a new nation, conceived in liberty, and dedicated to the proposition that &ldquo;all men are created equal.&rdquo;<br/>
+<br/>
+Now we are engaged in a great civil war, testing whether that nation, or any nation so conceived, and so dedicated, can long endure. We are met on a great <span id="diff-2845" class="diff change" uuid="ddfc08df-4758-46da-856b-aec5cf1e044e" juxta:range="340,352" juxta:connect-to="2844"">battle field</span> of that war. We<span id="diff-2849" class="diff change" uuid="b1c8c81b-f8ab-4f6e-bf5b-2fa013dde0cd" juxta:range="368,368" juxta:connect-to="2848""></span> come to dedicate a portion of <span id="diff-2851" class="diff change" uuid="a0a9b33a-a3ae-40ad-bcee-c4d8840018f7" juxta:range="399,401" juxta:connect-to="2850"">it</span>, as a final resting place for those who <span id="diff-2855" class="diff change" uuid="9c6100c1-3904-4875-aa37-4b056be7d187" juxta:range="442,446" juxta:connect-to="2854"">died</span> here<span id="diff-2857" class="diff change" uuid="7048377f-bbb6-43ed-937e-41b647659830" juxta:range="451,451" juxta:connect-to="2856""></span>, that <span id="diff-2863" class="diff change" uuid="bccba9e8-d78b-44fe-85a3-662be5cb236b" juxta:range="458,461" juxta:connect-to="2862"">the</span> nation might live. <span id="diff-2865" class="diff change" uuid="fac43f2e-b158-4f4c-a79e-5ebce4126393" juxta:range="481,485" juxta:connect-to="2864"">This</span> we <span id="diff-2879" class="diff change" uuid="6802dc89-d496-4445-852a-dd10ef878995" juxta:range="489,510" juxta:connect-to="2878"">may, in all propriety</span> do<span id="diff-2887" class="diff change" uuid="8bb7a5ca-2fa4-488b-bb8f-33a09ddee831" juxta:range="513,513" juxta:connect-to="2886""></span>.<br/>
+<br/>
+ But, in a larger sense, we can not dedicate<span id="diff-2889" class="diff change" uuid="844eceeb-e5e3-4489-a1c0-1973f7a77df0" juxta:range="560,560" juxta:connect-to="2888""></span> &ndash; we can not consecrate<span id="diff-2891" class="diff change" uuid="055498a2-5ba8-44de-8be1-1072269ff503" juxta:range="584,584" juxta:connect-to="2890""></span> &ndash; we can not hallow<span id="diff-2893" class="diff change" uuid="fb90e434-7085-490e-af64-f106df1c79bb" juxta:range="604,604" juxta:connect-to="2892""></span>, this ground &ndash; The brave men, living and dead, who struggled here, have <span id="diff-2895" class="diff change" uuid="1104b9f2-29d7-47a3-81ce-87d60cf800eb" juxta:range="677,685" juxta:connect-to="2894"">hallowed</span> it, far above our poor power to add or detract. The world will little note, nor long remember what we say here; <span id="diff-2897" class="diff change" uuid="f4a00c27-b63a-42d8-8344-4e5703d7a311" juxta:range="798,803" juxta:connect-to="2896"">while</span> it can never forget what they did here.<br/>
+<br/>
+ It is <span id="diff-2899" class="diff change" uuid="4347f4d9-bc7c-43a8-b871-e9a17978b238" juxta:range="852,858" juxta:connect-to="2898"">rather</span> for us, the living, <span id="diff-2901" class="diff change" uuid="902d854f-05ea-4ec6-bf77-2a1edde7e849" juxta:range="879,881" juxta:connect-to="2900"">we</span> here<span id="diff-2909" class="diff change" uuid="daaea04b-0b41-425b-9297-5c8c1cd2ad38" juxta:range="886,886" juxta:connect-to="2908""></span> be<span id="diff-2951" class="diff change" uuid="aeba7e2b-8d09-47a4-8c48-74e1caf32d14" juxta:range="889,889" juxta:connect-to="2950""></span> dedicated to the great task remaining before us<span id="diff-2953" class="diff change" uuid="9b5947f0-1e9d-4852-a633-59026b0d68c2" juxta:range="937,937" juxta:connect-to="2952""></span> &ndash; that, from these honored dead we take increased devotion to that cause for which they <span id="diff-2955" class="diff change" uuid="9c11da76-4a9b-4668-ae42-96fa5394081e" juxta:range="1026,1030" juxta:connect-to="2954"">here</span>, gave the last full measure of devotion<span id="diff-2957" class="diff change" uuid="b4dda6c0-df97-4932-b8f8-5fb91544fc75" juxta:range="1070,1070" juxta:connect-to="2956""></span> &ndash; that we here highly resolve<span id="diff-2959" class="diff change" uuid="28648cdf-9bef-4fd4-a735-b7d63733530f" juxta:range="1100,1100" juxta:connect-to="2958""></span> these dead shall not have died in vain<span id="diff-2961" class="diff change" uuid="3f0fe1b4-cb18-4fc1-b620-0bac2d5b3e6e" juxta:range="1139,1139" juxta:connect-to="2960""></span>; that <span id="diff-2963" class="diff change" uuid="129eced5-3984-4947-8e6e-7074e8fdf846" juxta:range="1146,1149" juxta:connect-to="2962"">the</span> nation<span id="diff-2965" class="diff change" uuid="80252516-185c-4dc7-8220-7c40d2949acb" juxta:range="1156,1156" juxta:connect-to="2964""></span>, shall have a new birth of freedom<span id="diff-2969" class="diff change" uuid="91692e52-d0eb-4f38-86fd-0d3a6b17bf30" juxta:range="1191,1191" juxta:connect-to="2968""></span>, and that government of the people, by the people, for the people, shall not perish from the earth.<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+        </div>
+    </div>
+    
+    <div style="clear: both;"></div>
+</div>
+
+
+<!-- popup for selecting a new witness -->
+<div class="witnesses-popup">
+    <span id="side" style="display: none"></span>
+    <div class="header">Select Witness</div>
+    <div id="wit-scroller">
+       <table class="witness-select" size="2">
+               <tr class="wit-sel">
+                  <td class="wit-sel">
+                     <p class="witness-option" id="sel-sbs-wit-57" title="Bliss copy">Bliss copy</p>
+                  </td>
+               </tr>
+               <tr class="wit-sel">
+                  <td class="wit-sel">
+                     <p class="witness-option" id="sel-sbs-wit-58" title="Nicolay Copy">Nicolay Copy</p>
+                  </td>
+               </tr>
+       </table>
+    </div>
+    <div class="popup-buttons">
+        <a id="sbs-ok-button" class="juxta-button sbs-button">OK</a>
+        <a id="sbs-cancel-button" class="juxta-button sbs-button">Cancel</a>
+    </div>
+</div>
+
+    </div>     
+
+
+<div id="wait-popup">
+   <img id="wait-spinner" src="https://s3.amazonaws.com/assets-juxtaeditions/assets/loader.gif" />
+   <p id="wait-title" style="text-align: center;">
+      Please Wait...
+   </p>
+</div>
+<script type="text/javascript">
+   $(document).ready( function( ) {
+       // diff click handler; call if the handler is defined, ignore otherwise.
+       $( ".diff" ).click( function( ) {
+           if( typeof diff_clicked === "function" ) {
+               var uuid = $(this).attr("uuid");
+               diff_clicked( uuid );
+           }
+       });
+
+   });
+</script>
+
+         </div>
+      </div>
+
+      <div class="page-footer">
+    <div class="juxta-brand">
+      <a href="http://www.juxtaeditions.com/"><img alt="Juxta logo" id="juxta-logo" src="https://s3.amazonaws.com/assets-juxtaeditions/assets/juxta-logo.png" /></a>
+    </div>
+</div>
+   </body>
+</html>
