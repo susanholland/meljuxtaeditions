@@ -26,7 +26,7 @@
    </head>
    <body>
       <div class="page-header">
-  <h1><a id="home-link" href="/susansgeneraltesting">General Testing</a></h1>
+  <h1><a id="home-link" href="/werwerwre">General Testing</a></h1>
 </div>		 
 
 
@@ -116,11 +116,11 @@
 
             
             <div id="reading-text" class="reading-text">
-      <div id="page-7312" class="reading-page">
+      <div id="page-7324" class="reading-page">
 
 
         <div class="thumb-image-div col-xs-3 col-sm-3 col-md-3 col-lg-3"></div>
-        <div class="reading-div col-xs-8 col-sm-8 col-md-8 col-lg-8" id="div-1"><span data-annotation-id='7313' class='annotation humedit-pb'>Text added in Mel Juxta Editions. </span></div>
+        <div class="reading-div col-xs-8 col-sm-8 col-md-8 col-lg-8" id="div-1"><span data-annotation-id='7325' class='annotation humedit-pb'>Text added in Mel Juxta Editions</span></div>
         <input id="annotationsJSON" name="annotationsJSON" type="hidden" value="[]" />
 
       </div>
@@ -144,7 +144,7 @@
         });
 
         // convert to real JSON
-        var images = JSON.parse( '{&quot;1&quot;:[{&quot;aid&quot;:7313,&quot;guid&quot;:&quot;a35ee194-bcd9-41fb-b37a-d2ee695ab8b3&quot;,&quot;thumbnail_url&quot;:&quot;https://dave-uploads-juxtaeditions.s3.amazonaws.com/zoom_dataa35ee194-bcd9-41fb-b37a-d2ee695ab8b3artwork_1-1.jpeg&quot;}]}'.replace( /&quot;/g, "\"" ) );
+        var images = JSON.parse( '{&quot;1&quot;:[{&quot;aid&quot;:7325,&quot;guid&quot;:&quot;a35ee194-bcd9-41fb-b37a-d2ee695ab8b3&quot;,&quot;thumbnail_url&quot;:&quot;https://dave-uploads-juxtaeditions.s3.amazonaws.com/zoom_dataa35ee194-bcd9-41fb-b37a-d2ee695ab8b3artwork_1-1.jpeg&quot;}]}'.replace( /&quot;/g, "\"" ) );
 
         // manually add the images to the page once it is loaded
         $.each( images, function( page, images ) {
@@ -177,9 +177,9 @@
 
         // set the minimum page height in case we have moved stuff around...
         // do each page seperatly...
-           var last_thumbnail = $( "#page-7312 .thumb-image" ).filter( ":last" );
+           var last_thumbnail = $( "#page-7324 .thumb-image" ).filter( ":last" );
            if( last_thumbnail ) {
-               $( "#page-7312" ).css( "min-height", last_thumbnail.offset( ).top );
+               $( "#page-7324" ).css( "min-height", last_thumbnail.offset( ).top );
            }
 
         // hover over functionality...
@@ -217,7 +217,7 @@
 
    $(document).ready(function() {
       var seaDragonAssetsPath = "https://s3.amazonaws.com/assets-juxtaeditions/assets/"
-        var externalContentPath = "/susansgeneraltesting/catalog/"
+        var externalContentPath = "/werwerwre/catalog/"
       var publishedView = new HumEditViewer.PublishedView({
             el: $("#hum-edit-published"),
             seaDragonAssetsPath: seaDragonAssetsPath,
