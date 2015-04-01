@@ -26,7 +26,7 @@
    </head>
    <body>
       <div class="page-header">
-  <h1><a id="home-link" href="/werwerwre">General Testing</a></h1>
+  <h1><a id="home-link" href="/tuy">Susan Testing Text</a></h1>
 </div>		 
 
 
@@ -88,7 +88,7 @@
    <table class="header block">
          <tr>
             <td class = "header name">Main Title:</td>
-            <td>testing</td>
+            <td>test</td>
          </tr>
    
       <tr class="sep"><td colspan="2"/></tr>
@@ -125,11 +125,11 @@
 
             
             <div id="reading-text" class="reading-text">
-      <div id="page-7402" class="reading-page">
+      <div id="page-7416" class="reading-page">
 
 
         <div class="thumb-image-div col-xs-3 col-sm-3 col-md-3 col-lg-3"></div>
-        <div class="reading-div col-xs-8 col-sm-8 col-md-8 col-lg-8" id="div-1"><span data-annotation-id='7403' class='annotation humedit-pb'>this is page 1<br/></span><span data-annotation-id='7404' class='annotation humedit-pb'>this is page 2<br/><span data-annotation-id='7405' class='annotation humedit-pb'></span>this is page 3</span></div>
+        <div class="reading-div col-xs-8 col-sm-8 col-md-8 col-lg-8" id="div-1"><span data-annotation-id='7417' class='annotation humedit-pb'>page 1<br/></span><span data-annotation-id='7418' class='annotation humedit-pb'>page 2<br/><span data-annotation-id='7419' class='annotation humedit-pb'></span>page 3</span></div>
         <input id="annotationsJSON" name="annotationsJSON" type="hidden" value="[]" />
 
       </div>
@@ -153,7 +153,7 @@
         });
 
         // convert to real JSON
-        var images = JSON.parse( '{&quot;1&quot;:[{&quot;aid&quot;:7405,&quot;guid&quot;:&quot;90646f83-1169-4a7e-b712-f94f13114a3d&quot;,&quot;thumbnail_url&quot;:&quot;https://dave-uploads-juxtaeditions.s3.amazonaws.com/zoom_data90646f83-1169-4a7e-b712-f94f13114a3d2_BAEA8DC4-4B09-4968-9BD4-DD79EE986D5C-3.png&quot;},{&quot;aid&quot;:7404,&quot;guid&quot;:&quot;001f06d8-c2c9-44b7-9a9b-d3f76aa1ef0b&quot;,&quot;thumbnail_url&quot;:&quot;https://dave-uploads-juxtaeditions.s3.amazonaws.com/zoom_data001f06d8-c2c9-44b7-9a9b-d3f76aa1ef0b1_9DE6D0C1-FC9E-4C21-8532-1B5A62E43BDF-3.png&quot;},{&quot;aid&quot;:7403,&quot;guid&quot;:&quot;f800e2a4-1627-4256-9cc2-521d13adb4b3&quot;,&quot;thumbnail_url&quot;:&quot;https://dave-uploads-juxtaeditions.s3.amazonaws.com/zoom_dataf800e2a4-1627-4256-9cc2-521d13adb4b30_2933A9EE-8DFD-4318-9E6D-35878E1E4BF5-3.png&quot;}]}'.replace( /&quot;/g, "\"" ) );
+        var images = JSON.parse( '{&quot;1&quot;:[{&quot;aid&quot;:7419,&quot;guid&quot;:&quot;54ea3bd7-400e-40a8-8389-116e5f3e635c&quot;,&quot;thumbnail_url&quot;:&quot;https://dave-uploads-juxtaeditions.s3.amazonaws.com/zoom_data54ea3bd7-400e-40a8-8389-116e5f3e635c2_BAEA8DC4-4B09-4968-9BD4-DD79EE986D5C-3.png&quot;},{&quot;aid&quot;:7418,&quot;guid&quot;:&quot;681a31d9-c8c5-404b-ae58-dcfb8fef3fe3&quot;,&quot;thumbnail_url&quot;:&quot;https://dave-uploads-juxtaeditions.s3.amazonaws.com/zoom_data681a31d9-c8c5-404b-ae58-dcfb8fef3fe31_9DE6D0C1-FC9E-4C21-8532-1B5A62E43BDF-3.png&quot;},{&quot;aid&quot;:7417,&quot;guid&quot;:&quot;2024394d-e37d-4b61-90d7-8aa7eb324b55&quot;,&quot;thumbnail_url&quot;:&quot;https://dave-uploads-juxtaeditions.s3.amazonaws.com/zoom_data2024394d-e37d-4b61-90d7-8aa7eb324b550_2933A9EE-8DFD-4318-9E6D-35878E1E4BF5-3.png&quot;}]}'.replace( /&quot;/g, "\"" ) );
 
         // manually add the images to the page once it is loaded
         $.each( images, function( page, images ) {
@@ -186,9 +186,9 @@
 
         // set the minimum page height in case we have moved stuff around...
         // do each page seperatly...
-           var last_thumbnail = $( "#page-7402 .thumb-image" ).filter( ":last" );
+           var last_thumbnail = $( "#page-7416 .thumb-image" ).filter( ":last" );
            if( last_thumbnail ) {
-               $( "#page-7402" ).css( "min-height", last_thumbnail.offset( ).top );
+               $( "#page-7416" ).css( "min-height", last_thumbnail.offset( ).top );
            }
 
         // hover over functionality...
@@ -226,7 +226,7 @@
 
    $(document).ready(function() {
       var seaDragonAssetsPath = "https://s3.amazonaws.com/assets-juxtaeditions/assets/"
-        var externalContentPath = "/werwerwre/catalog/"
+        var externalContentPath = "/tuy/catalog/"
       var publishedView = new HumEditViewer.PublishedView({
             el: $("#hum-edit-published"),
             seaDragonAssetsPath: seaDragonAssetsPath,
