@@ -4,42 +4,37 @@
 }
 
 #main-content {
-   height: 100%;
-   margin-left: 20px;
-   background-color: #FDEECB;
+	height: 100%;
+	margin-left: 20px;
 }
 
 .error {
-   color: red;
-}
-
-body {
-   background-color: #FDEECB;
+	color: red;
 }
 
 .juxta-brand {
-   
-   float: right;
-   padding-top: 10px;
-   padding-right: 10px;
+	
+	float: right;
+	padding-top: 10px;
+	padding-right: 10px;
 }
 
 .page-header {
-   margin-left: 20px;
+	margin-left: 20px;
 }
 
 .page-footer {
-   clear: both;
-   margin-top: 20px;
-   padding-right: 20px;
-   width: 100%;
-   height: 80px;
-   background-color: #FDEECB;
+	clear: both;
+	margin-top: 20px;
+	padding-right: 20px;
+	width: 100%;
+	height: 80px;
+	background: #eaeaea;	
 }
 
 .edition-cover {
-   float: right;
-   max-width: 500px;
+	float: right;
+	max-width: 500px;
 }
 
 .edition-cover img {
@@ -47,7 +42,7 @@ body {
 }
 
 .main-content {
-   max-width: 500px;
+	max-width: 500px;
 }
 
 #published-header {
@@ -58,7 +53,7 @@ body {
    font-size: 1.2em;
    margin: 20px 0 10px 0px;
    border-bottom: 1px solid #ddd;
-   background-color: #FDEECB;
+   background-color: #fafafa;
    border-top: 1px solid #ddd;
    padding: 1px 15px;
 }
@@ -85,36 +80,4 @@ body {
   text-align: right;
   color: #888;
   width: 210px;
-}
-
-#headernav {
-  background-color: #000000;
-  color: #ffffff;
-  padding: 5px;
-  font-size: 12px;
-  font-weight: bold;
-  width: 1024px;
-  margin: auto;
-}
-
-#headernav a {
-  color: #ffffff;
-}
-
-.reading-page, .reading-text {
-   background-color: #FDEECB !important;
-   -webkit-box-shadow: none !important;
-   -moz-box-shadow: none !important;
-   box-shadow: none !important;
-}
-
-#accordion,
-#document-viewport,
-#document-viewport .tei-header-editor,
-#hum-edit-published .toolbar {
-   background-color: #FDEECB !important;
-}
-
-.doc-title {
-   padding-left: 15px;
 }
