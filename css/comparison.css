@@ -5,7 +5,7 @@
 }
 
 body {
-   background-color: #FDEECB;
+   background-color: #FFF;
    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
@@ -26,7 +26,7 @@ body {
 .header {
    border-bottom: 1px solid #dddddd;
    padding: 3px 8px;
-   background-color: #FDEECB;
+   background-color: #f5f5f5;
 }
 
 #connections-div {
@@ -112,7 +112,7 @@ body {
    padding-right: 10px;
    padding-top: 5px;
    padding-bottom: 10px;
-   background-color: #FDEECB;
+   background: #eaeaea;
    text-align: left;
    font-weight: bold;
    margin-bottom: 15px;
@@ -217,11 +217,11 @@ body {
 
 .toolbar {
    padding: 10px 10px;
-   background-color: #FDEECB;
+   background-color: #efefef;
 }
 
 .document-viewport {
-   background-color: #FDEECB;
+   background: #dcdcdc;
    padding: 15px;
 }
 
@@ -232,7 +232,7 @@ div.page {
    padding-left: 30px;
    padding-right: 30px;
    padding-bottom: 80px;
-   background-color: #FDEECB;
+   background: white;
    width: 600px;
    height: 582px;
    box-shadow: 3px 3px 4px #000;
@@ -251,7 +251,7 @@ div.page {
    margin-bottom: 20px;
    width: 450px;
    height: 582px;
-   background-color: #FDEECB;
+   background: white;
    box-shadow: 3px 3px 4px #000;
 }
 .image-spacer {
@@ -267,7 +267,7 @@ div.page {
    text-align: center;
    width: 200px;
    height: auto;
-   background-color: #FDEECB;
+   background-color: white;
    position: fixed;
    top: 40%;
    left: 50%;
@@ -287,8 +287,4 @@ div.page {
 
 #wait-spinner {
    margin-top: 15px;
-}
-
-.sbs-witness {
-   background-color: #FDEECB !important;
 }
